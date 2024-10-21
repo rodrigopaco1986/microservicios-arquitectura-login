@@ -1,0 +1,19 @@
+{
+    "name": "rpj/login",
+    "description": "Test project for a login service",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Rpj\\Login\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo Paco",
+            "email": "rodrigopaco.1986@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "laravel/pint": "^1.18"
+    }
+}
