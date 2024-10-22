@@ -5,7 +5,19 @@
     "autoload": {
         "psr-4": {
             "Rpj\\Login\\": "src/"
-        }
+        },
+        "files": [
+            "src/functions.php",
+            "constants.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        },
+        "files": [
+            "constants.php"
+        ]
     },
     "authors": [
         {
@@ -14,6 +26,7 @@
         }
     ],
     "require-dev": {
-        "laravel/pint": "^1.18"
+        "laravel/pint": "^1.18",
+        "phpunit/phpunit": "^11.4"
     }
 }

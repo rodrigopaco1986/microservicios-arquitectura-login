@@ -18,3 +18,13 @@ const LOGGER_HTTP_REQUEST_IS_GET = true;
 const LOGGER_HTTP_REQUEST_DATA = 'log_value';
 
 const LOGGER_FILENAME = 'logs.txt';
+
+const SETTINGS_LOGGER_FILE = 'file';
+const SETTINGS_LOGGER_HTTP = 'http';
+const SETTINGS_LOGGER_DATABASE = 'database';
+const SETTINGS_LOGGER_NONE = 'none';
+
+const SETTINGS_ENCRYPTION_MD5 = 'md5';
+const SETTINGS_ENCRYPTION_CRYPT = 'crypt';
+const SETTINGS_ENCRYPTION_BCRYPT = 'bcrypt';
+const SETTINGS_ENCRYPTION_NONE = 'none';

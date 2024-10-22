@@ -3,7 +3,6 @@
 header('Content-Type: application/json');
 
 include 'vendor/autoload.php';
-include 'constants.php';
 
 use Rpj\Login\Database\DatabaseFactory;
 use Rpj\Login\Database\IDatabase;
@@ -13,7 +12,7 @@ use Rpj\Login\Response;
 use Rpj\Login\Session;
 
 $session = new Session;
-$response = new Response;
+$response = $response ?? new Response;
 
 $name = $_POST['name'] ?? false;
 $email = $_POST['email'] ?? false;
@@ -41,7 +40,7 @@ if ($name !== false && $email !== false && $password !== false) {
 }
 
 echo json_encode($response->toArray());
-exit();
+$response->terminate();
 
 function registerClient(IDatabase $database, array $data): bool
 {

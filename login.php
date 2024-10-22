@@ -3,7 +3,6 @@
 header('Content-Type: application/json');
 
 include 'vendor/autoload.php';
-include 'constants.php';
 
 use Rpj\Login\Database\DatabaseFactory;
 use Rpj\Login\Encryption\EncryptionFactory;
@@ -13,7 +12,7 @@ use Rpj\Login\Response;
 use Rpj\Login\Session;
 
 $session = new Session;
-$response = new Response;
+$response = $response ?? new Response;
 
 $email = $_POST['email'] ?? false;
 $password = $_POST['password'] ?? false;
@@ -68,7 +67,7 @@ function successResponse(ILogger $logger, string $loggerMsg, array $loggerParams
     $logger->info($loggerMsg, $loggerParams);
     $response = new Response(true);
     echo json_encode($response->toArray());
-    exit();
+    $response->terminate();
 }
 
 function failedResponse(ILogger $logger, string $loggerMsg, array $loggerParams, string $responseMsg): void
@@ -77,5 +76,5 @@ function failedResponse(ILogger $logger, string $loggerMsg, array $loggerParams,
     $response = new Response(false, $responseMsg);
 
     echo json_encode($response->toArray());
-    exit();
+    $response->terminate();
 }

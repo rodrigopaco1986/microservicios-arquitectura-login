@@ -23,4 +23,10 @@ class Response
             'data' => $this->data,
         ];
     }
+
+    public function terminate()
+    {
+        echo 'exit';
+        exit();
+    }
 }

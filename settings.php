@@ -3,7 +3,6 @@
 header('Content-Type: application/json');
 
 include 'vendor/autoload.php';
-include 'constants.php';
 
 use Rpj\Login\Encryption\BcryptEncryption;
 use Rpj\Login\Encryption\CryptEncryption;
@@ -17,7 +16,7 @@ use Rpj\Login\Response;
 use Rpj\Login\Session;
 
 $session = new Session;
-$response = new Response;
+$response = $response ?? new Response;
 
 $logger = $_POST['logger'] ?? false;
 $encryption = $_POST['encryption'] ?? false;
@@ -31,10 +30,10 @@ if (! $logger && ! $encryption) {
     if ($logger) {
 
         $loggerClass = match ($logger) {
-            'file' => FileLogger::class,
-            'http' => HttpLogger::class,
-            'database' => DatabaseLogger::class,
-            'none' => NullLogger::class,
+            SETTINGS_LOGGER_FILE => FileLogger::class,
+            SETTINGS_LOGGER_HTTP => HttpLogger::class,
+            SETTINGS_LOGGER_DATABASE => DatabaseLogger::class,
+            SETTINGS_LOGGER_NONE => NullLogger::class,
             default => false,
         };
 
@@ -50,10 +49,10 @@ if (! $logger && ! $encryption) {
     if ($encryption) {
 
         $encryptionClass = match ($encryption) {
-            'md5' => MD5Encryption::class,
-            'crypt' => CryptEncryption::class,
-            'bcrypt' => BcryptEncryption::class,
-            'none' => NullEncryption::class,
+            SETTINGS_ENCRYPTION_MD5 => MD5Encryption::class,
+            SETTINGS_ENCRYPTION_CRYPT => CryptEncryption::class,
+            SETTINGS_ENCRYPTION_BCRYPT => BcryptEncryption::class,
+            SETTINGS_ENCRYPTION_NONE => NullEncryption::class,
             default => false,
         };
 
@@ -70,12 +69,4 @@ if (! $logger && ! $encryption) {
 }
 
 echo json_encode($response->toArray());
-exit();
-
-function getSessionValues(Session $session): array
-{
-    return [
-        'logger' => $session->get(SESSION_LOGGER_NAME, DEFAULT_LOGGER),
-        'encryption' => $session->get(SESSION_ENCRYPTION_NAME, DEFAULT_ENCRYPTION),
-    ];
-}
+$response->terminate();
