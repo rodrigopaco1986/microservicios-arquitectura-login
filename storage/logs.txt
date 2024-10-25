@@ -1,0 +1,94 @@
+2024-10-25T00:54:54+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com.g attempted to log in with wrong password.
+2024-10-25T00:57:17+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com.gs attempted to log in, but he was not found in database.
+2024-10-25T01:05:10+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com.gs attempted to log in, but he was not found in database.
+2024-10-25T01:05:15+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:05:17+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:05:21+00:00 [INFO]: User rodrigo paco with email: rodrigopaco.1986@gmail.com has successfully logged in.
+2024-10-25T01:07:27+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:09:44+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com.sss attempted to log in, but he was not found in database.
+2024-10-25T01:10:44+00:00 [NOTICE]: User with email: {email} attempted to log in incorrectly.
+2024-10-25T01:10:44+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:10:44+00:00 [NOTICE]: User with email: {email} attempted to log in incorrectly.
+2024-10-25T01:10:44+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:10:44+00:00 [NOTICE]: User with email: {email} attempted to log in incorrectly.
+2024-10-25T01:10:44+00:00 [NOTICE]: User with email: 0.76165400 1729818644fherman@hotmail.com attempted to log in, but he was not found in database.
+2024-10-25T01:11:45+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in incorrectly.
+2024-10-25T01:11:45+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:11:45+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in incorrectly.
+2024-10-25T01:11:45+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:11:45+00:00 [NOTICE]: User with email: 0.44429000 1729818705arianna.schuppe@yahoo.com attempted to log in incorrectly.
+2024-10-25T01:11:45+00:00 [NOTICE]: User with email: 0.44429000 1729818705arianna.schuppe@yahoo.com attempted to log in, but he was not found in database.
+2024-10-25T01:12:45+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in incorrectly.
+2024-10-25T01:12:45+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:12:45+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in incorrectly.
+2024-10-25T01:12:45+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:12:45+00:00 [NOTICE]: User with email: 0.67262100 1729818765lafayette54@gmail.com attempted to log in incorrectly.
+2024-10-25T01:12:45+00:00 [NOTICE]: User with email: 0.67262100 1729818765lafayette54@gmail.com attempted to log in, but he was not found in database.
+2024-10-25T01:13:23+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in incorrectly.
+2024-10-25T01:13:23+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:13:23+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in incorrectly.
+2024-10-25T01:13:23+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:13:23+00:00 [NOTICE]: User with email: 0.39338900 1729818803kemmer.terence@bayer.com attempted to log in incorrectly.
+2024-10-25T01:13:23+00:00 [NOTICE]: User with email: 0.39338900 1729818803kemmer.terence@bayer.com attempted to log in, but he was not found in database.
+2024-10-25T01:13:50+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in incorrectly.
+2024-10-25T01:13:50+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:16:29+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in incorrectly.
+2024-10-25T01:16:29+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:16:29+00:00 [NOTICE]: User with email: 0.19605900 1729818989roderick.daugherty@hotmail.com attempted to log in incorrectly.
+2024-10-25T01:16:29+00:00 [NOTICE]: User with email: 0.19605900 1729818989roderick.daugherty@hotmail.com attempted to log in, but he was not found in database.
+2024-10-25T01:17:47+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in incorrectly.
+2024-10-25T01:17:47+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:17:47+00:00 [NOTICE]: User with email: 0.14311200 1729819067makenna.mayert@gmail.com attempted to log in incorrectly.
+2024-10-25T01:17:47+00:00 [NOTICE]: User with email: 0.14311200 1729819067makenna.mayert@gmail.com attempted to log in, but he was not found in database.
+2024-10-25T01:20:44+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in incorrectly.
+2024-10-25T01:20:44+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:20:44+00:00 [NOTICE]: User with email: 0.02979800 1729819244rylan.eichmann@yahoo.com attempted to log in incorrectly.
+2024-10-25T01:20:44+00:00 [NOTICE]: User with email: 0.02979800 1729819244rylan.eichmann@yahoo.com attempted to log in, but he was not found in database.
+2024-10-25T01:22:41+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:22:41+00:00 [NOTICE]: User with email: 0.73749100 1729819361pparisian@welch.com attempted to log in, but he was not found in database.
+2024-10-25T01:23:36+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:23:36+00:00 [NOTICE]: User with email: 0.89590900 1729819416hannah.schmeler@hotmail.com attempted to log in, but he was not found in database.
+2024-10-25T01:25:48+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:27:47+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:29:11+00:00 [INFO]: User rodrigo paco with email: rodrigopaco.1986@gmail.com has successfully logged in.
+2024-10-25T01:29:42+00:00 [INFO]: User rodrigo paco with email: rodrigopaco.1986@gmail.com has successfully logged in.
+2024-10-25T01:30:02+00:00 [INFO]: User rodrigo paco with email: rodrigopaco.1986@gmail.com has successfully logged in.
+2024-10-25T01:30:02+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:30:02+00:00 [NOTICE]: User with email: 0.75035300 1729819802uleuschke@yahoo.com attempted to log in, but he was not found in database.
+2024-10-25T01:30:31+00:00 [INFO]: User rodrigo paco with email: rodrigopaco.1986@gmail.com has successfully logged in.
+2024-10-25T01:30:31+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T01:30:31+00:00 [NOTICE]: User with email: 0.13612800 1729819831brigitte.oconner@schmidt.com attempted to log in, but he was not found in database.
+2024-10-25T01:30:31+00:00 [INFO]: A client was registered successfully. Name: Prof. Clifford Halvorson Jr.. Email: 0.15210300 1729819831osborne.jerde@runolfsdottir.com
+2024-10-25T01:30:31+00:00 [NOTICE]: A new client attempted to register with a taken email. Name: Rodrigo Paco. Email: rodrigopaco.1986@gmail.com
+2024-10-25T14:05:37+00:00 [INFO]: User rodrigo paco with email: rodrigopaco.1986@gmail.com has successfully logged in.
+2024-10-25T14:05:37+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T14:05:37+00:00 [NOTICE]: User with email: 0.73306700 1729865137kreiger.donnie@yahoo.com attempted to log in, but he was not found in database.
+2024-10-25T14:05:37+00:00 [INFO]: A client was registered successfully. Name: Prof. Virginie Kreiger IV. Email: 0.73473000 1729865137muller.wanda@hotmail.com
+2024-10-25T14:05:37+00:00 [NOTICE]: A new client attempted to register with a taken email. Name: Rodrigo Paco. Email: rodrigopaco.1986@gmail.com
+2024-10-25T14:18:16+00:00 [NOTICE]: Logger was uptated to: Rpj\Login\Logger\Concrete\FileLogger
+2024-10-25T14:18:16+00:00 [NOTICE]: Encryption was uptated to: Rpj\Login\Encryption\CryptEncryption
+2024-10-25T14:18:35+00:00 [NOTICE]: Logger was uptated to: Rpj\Login\Logger\Concrete\FileLogger
+2024-10-25T14:18:35+00:00 [NOTICE]: Encryption was uptated to: Rpj\Login\Encryption\CryptEncryption
+2024-10-25T14:19:06+00:00 [NOTICE]: Logger was attempted to be updated with wrong option: files
+2024-10-25T14:19:06+00:00 [NOTICE]: Encryption was attempted to be updated with wrong option: crypts
+2024-10-25T14:19:23+00:00 [NOTICE]: Logger was uptated to: Rpj\Login\Logger\Concrete\FileLogger
+2024-10-25T14:19:23+00:00 [NOTICE]: Encryption was uptated to: Rpj\Login\Encryption\MD5Encryption
+2024-10-25T14:19:33+00:00 [NOTICE]: Logger was uptated to: Rpj\Login\Logger\Concrete\HttpLogger
+2024-10-25T14:19:33+00:00 [NOTICE]: Encryption was uptated to: Rpj\Login\Encryption\MD5Encryption
+2024-10-25T14:20:46+00:00 [NOTICE]: Logger was uptated to: Rpj\Login\Logger\Concrete\HttpLogger
+2024-10-25T14:20:46+00:00 [NOTICE]: Encryption was uptated to: Rpj\Login\Encryption\MD5Encryption
+2024-10-25T14:21:39+00:00 [INFO]: A client was registered successfully. Name: rodrigo paco. Email: rodrigopaco.1986@gmail.com.zzz
+2024-10-25T14:21:42+00:00 [NOTICE]: A new client attempted to register with a taken email. Name: rodrigo paco. Email: rodrigopaco.1986@gmail.com.zzz
+2024-10-25T14:21:48+00:00 [INFO]: User rodrigo paco with email: rodrigopaco.1986@gmail.com.zzz has successfully logged in.
+2024-10-25T14:21:50+00:00 [INFO]: User rodrigo paco with email: rodrigopaco.1986@gmail.com.zzz has successfully logged in.
+2024-10-25T14:21:53+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com.zzz attempted to log in with wrong password.
+2024-10-25T14:21:55+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com.zzzs attempted to log in, but he was not found in database.
+2024-10-25T14:27:04+00:00 [NOTICE]: Logger was uptated to: Rpj\Login\Logger\Concrete\HttpLogger
+2024-10-25T14:27:04+00:00 [NOTICE]: Encryption was uptated to: Rpj\Login\Encryption\MD5Encryption
+2024-10-25T14:34:49+00:00 [INFO]: User rodrigo paco with email: rodrigopaco.1986@gmail.com has successfully logged in.
+2024-10-25T14:34:50+00:00 [NOTICE]: User with email: rodrigopaco.1986@gmail.com attempted to log in with wrong password.
+2024-10-25T14:34:50+00:00 [NOTICE]: User with email: 0.02578300 1729866890cornelius.kuhlman@gmail.com attempted to log in, but he was not found in database.
+2024-10-25T14:34:50+00:00 [INFO]: A client was registered successfully. Name: Cullen Wilkinson. Email: 0.02767700 1729866890elyssa.doyle@dach.com
+2024-10-25T14:34:50+00:00 [NOTICE]: A new client attempted to register with a taken email. Name: Rodrigo Paco. Email: rodrigopaco.1986@gmail.com
+2024-10-25T14:34:50+00:00 [NOTICE]: Logger was uptated to: Rpj\Login\Logger\Concrete\FileLogger
+2024-10-25T14:34:50+00:00 [NOTICE]: Logger was uptated to: Rpj\Login\Logger\Concrete\HttpLogger

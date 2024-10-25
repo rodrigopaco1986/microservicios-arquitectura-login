@@ -10,9 +10,27 @@ class Response
         private array $data = [],
     ) {}
 
+    public function setSuccess(bool $success): void
+    {
+        $this->success = $success;
+    }
+
+    public function setMessage(string $message): void
+    {
+        $this->message = $message;
+    }
+
     public function setData(array $data): void
     {
         $this->data = $data;
+    }
+
+    public function setValues(bool $success, string $message = '', array $data = []): void
+    {
+        $this->success = $success;
+        $this->message = $message;
+        $this->data = $data;
+
     }
 
     public function toArray(): array
@@ -26,7 +44,6 @@ class Response
 
     public function terminate()
     {
-        echo 'exit';
         exit();
     }
 }

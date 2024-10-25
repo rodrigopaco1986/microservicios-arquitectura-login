@@ -12,6 +12,7 @@ use Rpj\Login\Logger\Concrete\DatabaseLogger;
 use Rpj\Login\Logger\Concrete\FileLogger;
 use Rpj\Login\Logger\Concrete\HttpLogger;
 use Rpj\Login\Logger\Concrete\NullLogger;
+use Rpj\Login\Logger\LoggerFactory;
 use Rpj\Login\Response;
 use Rpj\Login\Session;
 
@@ -21,9 +22,13 @@ $response = $response ?? new Response;
 $logger = $_POST['logger'] ?? false;
 $encryption = $_POST['encryption'] ?? false;
 
+$loggerClassName = $session->get(SESSION_LOGGER_NAME, DEFAULT_LOGGER);
+$loggerObj = LoggerFactory::factory($loggerClassName);
+
 if (! $logger && ! $encryption) {
 
-    $response = new Response(false, 'Selected logger/encryption are missing!');
+    $response->setValues(false, 'Selected logger/encryption are missing!');
+    $loggerObj->notice('Logger was attempted to be updated with missing options!');
 
 } else {
 
@@ -39,9 +44,10 @@ if (! $logger && ! $encryption) {
 
         if ($loggerClass) {
             $session->set(SESSION_LOGGER_NAME, $loggerClass);
+            $loggerObj->notice('Logger was uptated to: '.$loggerClass);
         } else {
-            $response = new Response(false, 'Available loggers: file, http, database, none.',
-            );
+            $response->setValues(false, 'Available loggers: file, http, database, none.');
+            $loggerObj->notice('Logger was attempted to be updated with wrong option: '.$logger);
         }
 
     }
@@ -58,8 +64,10 @@ if (! $logger && ! $encryption) {
 
         if ($encryptionClass) {
             $session->set(SESSION_ENCRYPTION_NAME, $encryptionClass);
+            $loggerObj->notice('Encryption was uptated to: '.$encryptionClass);
         } else {
-            $response = new Response(false, 'Availables encryptions: md5, crypt, bcrypt, none.');
+            $response->setValues(false, 'Availables encryptions: md5, crypt, bcrypt, none.');
+            $loggerObj->notice('Encryption was attempted to be updated with wrong option: '.$encryption);
         }
 
     }

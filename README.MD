@@ -4,7 +4,7 @@ This is a simple example to test a backend service to login, using different log
 
 ## Installation
 
-If you get the full zip, just uncompress it and run some local web server or some dev web server, like:
+If you get the full zip, just uncompress it and run some local web server or some dev web server (from root folder with command line, type)
 
 ```bash
 php -S localhost:8000
@@ -50,3 +50,14 @@ chmod -R 775 storage
 
 ## Updating default values
 To update some default values, like the url for the http logger, make the changes in constants.php file.
+
+## Dev notes
+### Linter the code:
+```bash
+./vendor/bin/pint
+```
+
+### Run tests
+```bash
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests
+```

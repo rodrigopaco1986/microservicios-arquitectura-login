@@ -23,7 +23,6 @@ class BaseTestCase extends TestCase
         ini_set('display_errors', '1');
     }
 
-    
     protected function mockTerminateResponse(): MockObject
     {
         $mockResponse = $this->getMockBuilder(Response::class)
@@ -31,7 +30,8 @@ class BaseTestCase extends TestCase
             ->getMock();
         $mockResponse->expects($this->once())
             ->method('terminate')
-            ->willReturn(null); 
+            ->willReturn(null);
+
         return $mockResponse;
     }
 }

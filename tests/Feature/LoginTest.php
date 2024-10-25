@@ -5,49 +5,58 @@ namespace Tests\Feature;
 use Faker\Factory;
 use Tests\BaseTestCase;
 
-class RegisterClientTest extends BaseTestCase
+class LoginTest extends BaseTestCase
 {
-    public function testNewValidClient()
+    public function testValidCredentials()
     {
-        $faker = Factory::create();
-
-        $email = microtime().$faker->email();
-        // Expected response: {"success":true,"data":{"name":"", "email":"","password":"","password_crypt":"Rpj\\Login\\Encryption\\CryptEncryption"}}
-        $response = $this->setUpRegisterClientTest([
-            'name' => $faker->name(),
-            'email' => $email,
-            'password' => $faker->text(10),
-        ]);
-
-        $this->assertCommonSuccessResponse($response);
-
-        $this->assertEquals($email, $response['data']['email']);
-    }
-
-    public function testNewDupeClient()
-    {
-        // Expected response: {"success":false,"message":"User already registered with that email!"}
-        $response = $this->setUpRegisterClientTest([
-            'name' => 'Rodrigo Paco',
+        $response = $this->setUpLoginTest([
             'email' => 'rodrigopaco.1986@gmail.com',
             'password' => 'admin',
         ]);
 
-        $this->assertCommonFailedResponse($response);
-
-        $this->assertEquals('User already registered with that email!', $response['message']);
+        $this->assertCommonSuccessResponse($response);
     }
 
-    private function setUpRegisterClientTest(array $data): array
+    public function testInvalidCredentials()
+    {
+        $faker = Factory::create();
+
+        // Expected response: {"success":false,"data":{"name":"", "email":""}}
+        $response = $this->setUpLoginTest([
+            'email' => 'rodrigopaco.1986@gmail.com',
+            'password' => $faker->text(10),
+        ]);
+
+        $this->assertCommonFailedResponse($response);
+
+        $this->assertEquals('Invalid credentials!', $response['message']);
+    }
+
+    public function testClientNotFound()
+    {
+        $faker = Factory::create();
+
+        $email = microtime().$faker->email();
+        // Expected response: {"success":false,"message":"","data":{"email":""}}
+        $response = $this->setUpLoginTest([
+            'email' => $email,
+            'password' => $faker->text(10),
+        ]);
+
+        $this->assertCommonFailedResponse($response);
+
+        $this->assertEquals('Client not found!', $response['message']);
+    }
+
+    private function setUpLoginTest(array $data): array
     {
         $_SERVER['REQUEST_METHOD'] = 'POST';
-        $_POST['name'] = $data['name'] ?? '';
         $_POST['email'] = $data['email'] ?? '';
         $_POST['password'] = $data['password'] ?? '';
 
         ob_start();
         $response = $this->response;
-        include __DIR__.'/../../register.php';
+        include __DIR__.'/../../login.php';
         $output = ob_get_clean();
 
         $response = json_decode($output, true);
@@ -65,8 +74,6 @@ class RegisterClientTest extends BaseTestCase
         $this->assertIsArray($response['data']);
         $this->assertArrayHasKey('name', $response['data']);
         $this->assertArrayHasKey('email', $response['data']);
-        $this->assertArrayHasKey('password', $response['data']);
-        $this->assertArrayHasKey('password_crypt', $response['data']);
     }
 
     private function assertCommonFailedResponse($response): void

@@ -13,7 +13,7 @@ const DB_TABLE_CLIENTS = 'clients';
 const DB_TABLE_LOG = 'logs';
 const DB_TABLE_LOG_COLUMN = 'data';
 
-const LOGGER_HTTP_REQUEST_URL = 'https://webhook.site/ca153452-a296-4473-89ca-621bb8d5161c';
+const LOGGER_HTTP_REQUEST_URL = 'http://www.sd-bo.com/log.php';
 const LOGGER_HTTP_REQUEST_IS_GET = true;
 const LOGGER_HTTP_REQUEST_DATA = 'log_value';
 
